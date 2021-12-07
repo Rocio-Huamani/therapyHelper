@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Righteous&display=swap');
+
+body {
+    background-color: rgb(240, 211, 211);
+    margin: 0;
+    min-height: 100vh; 
+  
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    grid-template-areas:
+    "nav nav nav nav nav nav nav nav nav nav nav nav"
+    "main main main main main main main main main main main main"
+    "main main main main main main main main main main main main"
+    "principal principal principal principal principal principal principal principal sidebar sidebar sidebar sidebar"
+    "principal principal principal principal principal principal principal principal sidebar sidebar sidebar sidebar"
+    "principal principal principal principal principal principal principal principal sidebar sidebar sidebar sidebar"
+    "principal principal principal principal principal principal principal principal sidebar sidebar sidebar sidebar"
+    "principal principal principal principal principal principal principal principal sidebar sidebar sidebar sidebar"
+    "principal principal principal principal principal principal principal principal sidebar sidebar sidebar sidebar"
+    "principal principal principal principal principal principal principal principal sidebar sidebar sidebar sidebar"
+    "principal principal principal principal principal principal principal principal sidebar sidebar sidebar sidebar"
+    "aditionalResources aditionalResources aditionalResources aditionalResources aditionalResources aditionalResources aditionalResources aditionalResources sidebar sidebar sidebar sidebar"
+    "aditionalResources aditionalResources aditionalResources aditionalResources aditionalResources aditionalResources aditionalResources aditionalResources sidebar sidebar sidebar sidebar"
+    "aditionalResources aditionalResources aditionalResources aditionalResources aditionalResources aditionalResources aditionalResources aditionalResources sidebar sidebar sidebar sidebar"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+    gap: 0.5rem;
+    height: 100vh;
+    font-weight: 800;
+    font-size: 12px;
+    color: rgb(229, 226, 226);
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(27, 27, 27);
+    grid-area: nav;
+        
+}
+nav ul {
+    list-style: none;
+    font-size: 12px;
+    font-weight: bolder;
+    float: left;
+    width: 100%;
+    padding: 5px;
+    
+}
+li {
+    display: inline-block;
+    text-align: center;
+    width: 12%;
+    padding-top: 5px;
+    height: 100%;
+    
+    
+}
+li a {
+    color: rgb(249, 250, 245);
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "verdana";
+    
+}
+a:hover {
+    color: rgb(243, 95, 132);
+    
+}
+main {
+    grid-area: main;
+    text-align: center;
+}
+main h1 {
+    font-weight: bolder;
+    font-family: 'Righteous';
+    text-align: center;
+    color: rgb(94, 89, 89);
+    font-size: 40px;
+    padding-bottom: 4px;
+}
+main p{
+    text-align: center;
+    color:rgb(136, 69, 121);
+    font-size: 14px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.imgCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    
+}
+
+
+.sidebar {
+    background: rgb(133, 135, 136);
+    grid-area: sidebar;
+    border-radius: 5px;
+    color: rgb(241, 238, 241);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-weight:lighter;
+    padding: 60px 20px 40px 20px;
+}
+
+.principal {
+    
+    grid-area: principal;
+    color: rgb(88, 78, 78);
+    padding-top: 10px;
+
+}
+.aditionalResources {
+    background: rgba(214, 196, 204, 0.842);
+    grid-area: aditionalResources;
+    padding-top: 10px;
+    color:rgb(136, 69, 121);
+    border-radius: 5px;
+    
+}
+.aditionalResources p{
+    text-align: justify;
+    padding: 12px 15px 15px 15px;
+    color:rgb(31, 23, 14);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.footer {
+    background-color: rgb(44, 41, 37);
+    grid-area: footer;
+    color: rgb(241, 236, 236);
+    padding: 10px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:lighter;
+    min-height:50px; 
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+.footer a{
+    color: rgb(123, 203, 240);
+    text-decoration: none;
+    cursor: pointer;
+    
+    
+}
+
+/* Configuration to the vocabulary builder to fix*/
+
+#frame001 {
+    border-radius: 5px;
+    background-color: rgba(247, 125, 25, 0.386);
+    /*border: 2px solid rgb(241, 228, 228);*/
+    height: 500px;
+    width: 100%;
+}
+
+.buttons001 {
+    background-color: rgb(92, 40, 74);
+    color: white;
+    width: 30%;
+    height: 10%;
+    font-size:16px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.buttons002 {
+    background-color: rgb(51, 142, 202);
+    color: white;
+    width: auto;
+    border-radius: 15px;
+    border: none;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#font001 {
+    text-align: center;
+    font-size: large;
+    color: rgb(20, 20, 20);
+}
+
+/* math*/
+#frame002 {
+    border-radius: 5px;
+    background-color: rgba(62, 62, 243, 0.166);
+    border: 2px solid rgb(241, 228, 228);
+    height: 520px;
+    width: 100%;
+}
+
+.buttons005 {
+    background-color: rgb(163, 38, 119);
+    color: white;
+    width: 30%;
+    height: 10%;
+    font-size:20px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.buttons006 {
+    background-color: rgb(34, 114, 34);
+    color: white;
+    width: auto;
+    border-radius: 15px;
+    border: none;
+    padding: 18px;
+    font-size: 20px;
+}
+
+#font005 {
+    text-align: center;
+    font-size: large;
+    color: rgb(41, 10, 10);
+    padding: 10px;
+}
+
+
+
+
+@media only screen and (max-width: 550px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas:
+        "nav"
+        "main"
+        "principal"
+        "aditionalResources"
+        "sidebar"
+        "footer";
+    }
+    li a{
+        display: block;
+        font-size: 8px;  
+    }
+     
+}
